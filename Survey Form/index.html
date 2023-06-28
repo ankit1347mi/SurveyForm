@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="outside">
+		<form id="survey" method="post">
+			<h1>Application form for the Applying in the company</h1>
+			<p align="center"><b>Note:</b> The deadline for the application form is 02 July,2023</p>
+			<fieldset>
+				<legend align="center">Personal Details</legend>
+				<div>
+					<label id="name-label" for="name">Name: </label>
+					<input type="text" name="name" required placeholder="Enter your name">
+				</div>
+				<div>
+					<label>Address: </label>
+					<input type="address" name="address" placeholder="Enter address here">
+				</div>
+				<div>
+					<label>Email: </label>
+					<input type="email" name="User" required placeholder="Enter your email">
+				</div>
+				<div>
+					<label>Phone Number:</label>
+					<input type="number" name="num" required >
+				</div>
+				<div>
+					<label>Gender: </label>
+					<p><input type="radio" name="gender" value="male" checked>Male<br>
+					<input type="radio" name="gender" value="female" checked>Female<br>
+					<input type="radio" name="gender" value="other" checked>Other<br></p>
+				</div>
+				<label>Date of Birth: </label>
+				<input type="date" name="dob" required>
+			</fieldset>
+			<fieldset>
+				<legend align="center">Educational Details</legend>
+				<div>
+					<label>Highest Qualification</label>
+				<select id="dropdown">
+					<option disabled >Choose from here</option>
+					<option>BE</option>
+					<option>B.Tech</option>
+					<option>Bsc</option>
+					<option>Msc</option>
+					<option>other</option>
+				</select>
+				</div>
+				<div>
+					<label>Steam: </label>
+					<input type="text" name="stm" required placeholder="branch">
+				</div>
+				<div>
+					<label>YOP:</label>
+					<input type="number" name="yop" required>
+				</div>
+				<div>
+					<label>CGPA(out of 10)</label>
+					<input type="number" name="cgpa">
+				</div>
+				<div>
+					<label>Skills :</label>
+					<input type="text" name="Skills">
+				</div>
+				<div>
+					<label>Work Experience(if any otherwise mention NA):</label>
+					<input type="number" name="work">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend align="center">More Details</legend>
+				<div>
+					<label><p>In 50 words or more explain why you want to join the company</p></label>
+				<textarea placeholder="enter text here"></textarea>
+				</div>
+				<div>
+					<label>Current CTC:</label>
+					<input type="number" name="ctc">
+				</div>
+				<div>
+					<label>Expected CTC:</label>
+					<input type="number" name="ctc">
+				</div>
+				<div>
+					<label>Notice Period:</label>
+					<input type="number" name="period">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend align="center">Upload Documents</legend>
+				<div>
+					<p>Upload your degree marksheet , Work Experience certificate and passport photo here:<button>Attach Files</button></p>
+				</div>
+				<div id="Submitbutton">
+					<button type="Submit">Send your application</button>
+					
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
