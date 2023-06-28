@@ -33,7 +33,7 @@ div + div{
 	margin-top: 1em;
 }
 input,textarea{
-	width: 50px;
+	width: 200px;
 	border: 1px solid #999;
 }
 iput:focus,textarea:focus{
